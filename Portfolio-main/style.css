@@ -1,0 +1,146 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Dark background */
+    color: #fff;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000; /* Dark header background */
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ffc107; /* Highlighted color */
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffc107; /* Highlight link on hover */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+    background-color: #111; /* Slightly lighter dark background */
+}
+
+.hero .content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ffc107;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #d3d3d3;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #e0a800;
+}
+
+.hero img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Circular profile image */
+    object-fit: cover;
+    border: 5px solid #ffc107;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.projects .project-card {
+    background-color: #111; /* Slightly lighter dark */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.projects .project-card:hover {
+    transform: translateY(-10px);
+}
+
+.projects img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #ffc107;
+}
+
+.projects a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffc107;
+    padding: 15px 0;
+}
+
+.projects a:hover {
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: #fff;
+}
